@@ -1,0 +1,67 @@
+.row {
+    color: white;
+    margin-left: 20px;
+}
+.row__posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+.row__poster{
+    max-height: 100px;
+    margin-right: 10px;
+    width: 100%;
+    transition: transform 450ms;
+    position: relative;
+}
+.row__poster-image{
+    width: 166px;
+    object-fit: contain;
+
+}
+.row__posters::-webkit-scrollbar {
+    display: none;
+}
+.row__poster:hover{
+    transform: scale(1.08);
+    opacity: 1;
+}
+.row__posterLarge{
+    max-height: 250px;
+}
+.row__poster-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.row__poster-overlay:hover{
+    opacity: 1;
+}
+.row__poster-title{
+    color:#b0b0b0;
+    padding-bottom: 20px;
+}
+.row__poster-like{
+    position: absolute;
+    top:10px;
+    right:10px;
+    color: #d5bdbd;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+.row__poster-liked{
+    position: absolute;
+    top:10px;
+    right:10px;
+    color: #e50914;
+    cursor: pointer;
+    font-size: 1.6rem;
+}

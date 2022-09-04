@@ -1,0 +1,38 @@
+.modal__container{
+    position: relative;
+}
+.modal__title{
+    font-size: 4rem;
+
+}
+.modal__content{
+    color:white;
+    z-index: 5;
+
+}
+.modal__gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    background-image: linear-gradient(
+        0deg,
+    rgba(0,0,0,.8) 0,transparent 60%,
+    rgba(0,0,0,.8));
+}
+.details{
+    background-color: black;
+    height: 100vh;
+}
+.details__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:3rem;
+    width: 80%;
+    margin: auto
+}
